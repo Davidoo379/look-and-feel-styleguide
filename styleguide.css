@@ -193,6 +193,7 @@
       --text-dark: light-dark(var(--d600-bleached-silk), var(--d100-bleached-silk));
       --text-medium: light-dark(var(--d500-bleached-silk), var(--d200-bleached-silk));
       --text-light: light-dark(var(--d300-bleached-silk), var(--d300-bleached-silk));
+      --text-lightest: light-dark(var(--base-bleached-silk), var(--d800-bleached-silk));
       --text-green: light-dark(var(--d600-cockatoo), var(--l600-cockatoo));
       --text-green-light: light-dark(var(--d600-cockatoo), var(--l600-cockatoo));
       --text-pink: light-dark(var(--d600-lustful-wishes), var(--l600-lustful-wishes));
