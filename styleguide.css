@@ -157,7 +157,8 @@
 
       --icon-light: light-dark(var(--white), var(--l500-night-rider));
       --icon-medium: light-dark(var(--d300-bleached-silk), var(--d100-night-rider));
-      --icon-dark: light-dark(var(--base-night-rider), var(--base-bleached-silk));
+      --icon-dark: light-dark(var(--d600-bleached-silk), var(--d100-bleached-silk));
+      --icon-darkest: light-dark(var(--base-night-rider), var(--base-bleached-silk));
 
       --icon-dark-green: light-dark(var(--d600-cockatoo), var(--l600-cockatoo));
       --icon-dark-pink: light-dark(var(--d600-lustful-wishes), var(--l600-lustful-wishes));
