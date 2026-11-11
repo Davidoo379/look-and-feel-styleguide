@@ -9,8 +9,8 @@
 
    /* Kleuren */
    :root {
-      /* colors */
-      --base-xivier-blue: #66b3df;
+      /* MARK: colors */
+      --base-xavier-blue: #66b3df;
       --base-cockatoo: #66c7b4;
       --base-lustful-wishes: #d6439f;
       --base-night-rider: #322f2f;
@@ -154,6 +154,23 @@
 
       /* color-scheme set */
       color-scheme: light dark;
+
+      --icon-light: light-dark(var(--white), var(--l500-night-rider));
+      --icon-medium: light-dark(var(--d300-bleached-silk), var(--d100-night-rider));
+      --icon-dark: light-dark(var(--base-night-rider), var(--base-bleached-silk));
+
+      --button-rainbow-green: light-dark(var(--l600-cockatoo), var(--d600-cockatoo));
+      --button-rainbow-pink: light-dark(var(--l600-lustful-wishes), var(--d600-lustful-wishes));
+      --button-rainbow-blue: light-dark(var(--l600-xavier-blue), var(--d600-xavier-blue));
+
+      --nav-button-rainbow-hover-green: light-dark(var(--base-cockatoo), var(--base-cockatoo));
+      --nav-button-rainbow-hover-pink: light-dark(var(--base-lustful-wishes), var(--base-lustful-wishes));
+      --nav-button-rainbow-hover-blue: light-dark(var(--base-xavier-blue), var(--base-xavier-blue));
+
+      --site-background: light-dark(var(--base-bleached-silk), var(--base-eclipse));
+      --footer-background: light-dark(var(--white), var(--d100-eclipse));
+      --section-nav-background: light-dark(var(--l900-bleached-silk), var(--d100-eclipse));
+      --card-background: light-dark(var(--white), var(--l500-night-rider));
 
       /* Typografie */
 
