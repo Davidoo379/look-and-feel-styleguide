@@ -1,6 +1,6 @@
 # Gebruik
 Voeg deze link toe in je `head`
-`<link rel="stylesheet" href="https://davidoo379.github.io/look-and-feel-styleguide/assets/styleguide.css">`
+`<link rel="stylesheet" href="https://davidoo379.github.io/look-and-feel-styleguide/styleguide.css">`
 
 # Styleguide
 
