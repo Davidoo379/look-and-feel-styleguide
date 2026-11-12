@@ -155,7 +155,7 @@
       /* MARK: color-scheme */
       color-scheme: light dark;
 
-      --icon-light: light-dark(var(--white), var(--l500-night-rider));
+      --icon-light: light-dark(var(--white), var(--d900-night-rider));
       --icon-medium: light-dark(var(--d300-bleached-silk), var(--d100-night-rider));
       --icon-dark: light-dark(var(--d600-bleached-silk), var(--d100-bleached-silk));
       --icon-darkest: light-dark(var(--base-night-rider), var(--base-bleached-silk));
@@ -168,7 +168,7 @@
       --icon-light-blue: light-dark(var(--d100-xavier-blue), var(--d400-xavier-blue));
 
       --button-shadow: light-dark(var(--d200-bleached-silk), var(--d800-bleached-silk));
-      --button-dropshow: light-dark(alpha(from var(--d600-night-rider)/25%), alpha(from var(--d600-night-rider)/25%)); 
+      --button-dropshow: light-dark(alpha(from var(--d600-night-rider)/25%), alpha(from var(--d600-night-rider)/25%));
 
       --hover-green: light-dark(var(--base-cockatoo), var(--base-cockatoo));
       --hover-pink: light-dark(var(--base-lustful-wishes), var(--base-lustful-wishes));
