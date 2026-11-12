@@ -168,6 +168,7 @@
       --icon-light-blue: light-dark(var(--d100-xavier-blue), var(--d400-xavier-blue));
 
       --button-shadow: light-dark(var(--d200-bleached-silk), var(--d800-bleached-silk));
+      --button-dropshow: light-dark(alpha(from var(--d600-night-rider)/25%), (alpha(from var(--d600-night-rider)/25%); 
 
       --hover-green: light-dark(var(--base-cockatoo), var(--base-cockatoo));
       --hover-pink: light-dark(var(--base-lustful-wishes), var(--base-lustful-wishes));
