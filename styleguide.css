@@ -176,7 +176,7 @@
 
       --background-darkest: light-dark(var(--d900-night-rider), var(--l700-night-rider));
       --background-darker: light-dark(var(--d400-night-rider), var(--l400-night-rider));
-      --background-dark: light-dark(var(--l900-night-rider), var(--l100-eclipse));
+      --background-dark: light-dark(var(--l700-night-rider), var(--l100-eclipse));
       --background-medium: light-dark(var(--base-bleached-silk), var(--base-eclipse));
       --background-light: light-dark(var(--white), var(--d100-eclipse));
       --background-transparent: light-dark(alpha(from var(--white)/ 50%), alpha(from var(--base-eclipse)/ 50%));
