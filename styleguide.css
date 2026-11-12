@@ -156,7 +156,7 @@
       color-scheme: light dark;
 
       --icon-light: light-dark(var(--white), var(--d900-night-rider));
-      --icon-medium: light-dark(var(--d300-bleached-silk), var(--d100-night-rider));
+      --icon-medium: light-dark(var(--d300-bleached-silk), var(--d200-bleached-silk));
       --icon-dark: light-dark(var(--d600-bleached-silk), var(--d100-bleached-silk));
       --icon-darkest: light-dark(var(--base-night-rider), var(--base-bleached-silk));
 
