@@ -234,7 +234,7 @@
 
    html,
    body {
-      background-color: var(--background-dark);
+      background-color: var(--background-medium);
    }
 
    /* ! MAKE SURE YOU HAVE THIS FONT IN YOUR REPO */
