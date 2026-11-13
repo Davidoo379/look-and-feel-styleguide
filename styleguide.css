@@ -45,6 +45,7 @@
    /* Kleuren */
    :root {
       /* MARK: colors */
+      /* MARK: colors */
       --base-xavier-blue: #66b3df;
       --base-cockatoo: #66c7b4;
       --base-lustful-wishes: #d6439f;
@@ -52,193 +53,60 @@
       --base-bleached-silk: #f2f2f2;
       --base-eclipse: #3f3b3b;
 
-      /* xavier-blue darker shades */
-      --d100-xavier-blue: #5ca1c9;
-      --d200-xavier-blue: #528fb2;
-      --d300-xavier-blue: #477d9c;
-      --d400-xavier-blue: #3d6b86;
-      --d500-xavier-blue: #335a70;
-      --d600-xavier-blue: #294859;
-      --d700-xavier-blue: #1f3643;
-      --d800-xavier-blue: #14242d;
-      --d900-xavier-blue: #0a1216;
-
-      /* xavier-blue lighter shades */
-      --l100-xavier-blue: #75bbe2;
-      --l200-xavier-blue: #85c2e5;
-      --l300-xavier-blue: #94cae9;
-      --l400-xavier-blue: #a3d1ec;
-      --l500-xavier-blue: #b3d9ef;
-      --l600-xavier-blue: #c2e1f2;
-      --l700-xavier-blue: #d1e8f5;
-      --l800-xavier-blue: #e0f0f9;
-      --l900-xavier-blue: #f0f7fc;
-
-      /* cockatoo darker shades */
-      --d100-cockatoo: #5cb3a2;
-      --d200-cockatoo: #529f90;
-      --d300-cockatoo: #478b7e;
-      --d400-cockatoo: #3d776c;
-      --d500-cockatoo: #33645a;
-      --d600-cockatoo: #295048;
-      --d700-cockatoo: #1f3c36;
-      --d800-cockatoo: #142824;
-      --d900-cockatoo: #0a1412;
-
-      /* cockatoo lighter shades */
-      --l100-cockatoo: #75cdbc;
-      --l200-cockatoo: #85d2c3;
-      --l300-cockatoo: #94d8cb;
-      --l400-cockatoo: #a3ddd2;
-      --l500-cockatoo: #b3e3da;
-      --l600-cockatoo: #c2e9e1;
-      --l700-cockatoo: #d1eee9;
-      --l800-cockatoo: #e0f4f0;
-      --l900-cockatoo: #f0f9f8;
-
-      /* lustful-wishes darker shades */
-      --d100-lustful-wishes: #c13c8f;
-      --d200-lustful-wishes: #ab367f;
-      --d300-lustful-wishes: #962f6f;
-      --d400-lustful-wishes: #80285f;
-      --d500-lustful-wishes: #6b2250;
-      --d600-lustful-wishes: #561b40;
-      --d700-lustful-wishes: #401430;
-      --d800-lustful-wishes: #2b0d20;
-      --d900-lustful-wishes: #150710;
-
-      /* lustful-wishes lighter shades */
-      --l100-lustful-wishes: #da56a9;
-      --l200-lustful-wishes: #de69b2;
-      --l300-lustful-wishes: #e27bbc;
-      --l400-lustful-wishes: #e68ec5;
-      --l500-lustful-wishes: #eba1cf;
-      --l600-lustful-wishes: #efb4d9;
-      --l700-lustful-wishes: #f3c7e2;
-      --l800-lustful-wishes: #f7d9ec;
-      --l900-lustful-wishes: #fbecf5;
-
-      /* night rider darker shades */
-      --d100-night-rider: #2d2a2a;
-      --d200-night-rider: #282626;
-      --d300-night-rider: #232121;
-      --d400-night-rider: #1e1c1c;
-      --d500-night-rider: #191818;
-      --d600-night-rider: #141313;
-      --d700-night-rider: #0f0e0e;
-      --d800-night-rider: #0a0909;
-      --d900-night-rider: #050505;
-
-      /* night rider lighter shades */
-      --l100-night-rider: #474444;
-      --l200-night-rider: #5b5959;
-      --l300-night-rider: #706d6d;
-      --l400-night-rider: #848282;
-      --l500-night-rider: #999797;
-      --l600-night-rider: #adacac;
-      --l700-night-rider: #c2c1c1;
-      --l800-night-rider: #d6d5d5;
-      --l900-night-rider: #ebeaea;
-
-      /* bleached silk darker shades */
-      --d100-bleached-silk: #dadada;
-      --d200-bleached-silk: #c2c2c2;
-      --d300-bleached-silk: #a9a9a9;
-      --d400-bleached-silk: #919191;
-      --d500-bleached-silk: #797979;
-      --d600-bleached-silk: #616161;
-      --d700-bleached-silk: #494949;
-      --d800-bleached-silk: #303030;
-      --d900-bleached-silk: #181818;
-
-      /* bleached silk lighter shades */
-      --l100-bleached-silk: #f3f3f3;
-      --l200-bleached-silk: #f5f5f5;
-      --l300-bleached-silk: #f6f6f6;
-      --l400-bleached-silk: #f7f7f7;
-      --l500-bleached-silk: #f9f9f9;
-      --l600-bleached-silk: #fafafa;
-      --l700-bleached-silk: #fbfbfb;
-      --l800-bleached-silk: #fcfcfc;
-      --l900-bleached-silk: #fefefe;
-
-      /* eclipse darker shades */
-      --d100-eclipse: #393535;
-      --d200-eclipse: #322f2f;
-      --d300-eclipse: #2c2929;
-      --d400-eclipse: #262323;
-      --d500-eclipse: #201e1e;
-      --d600-eclipse: #191818;
-      --d700-eclipse: #131212;
-      --d800-eclipse: #0d0c0c;
-      --d900-eclipse: #060606;
-
-      /* eclipse silk lighter shades */
-      --l100-eclipse: #524f4f;
-      --l200-eclipse: #656262;
-      --l300-eclipse: #797676;
-      --l400-eclipse: #8c8989;
-      --l500-eclipse: #9f9d9d;
-      --l600-eclipse: #b2b1b1;
-      --l700-eclipse: #c5c4c4;
-      --l800-eclipse: #d9d8d8;
-      --l900-eclipse: #ecebeb;
-
       /* others */
       --white: #FFFFFF;
 
       /* MARK: color-scheme */
       color-scheme: light dark;
 
-      --icon-light: light-dark(var(--white), var(--d900-night-rider));
-      --icon-medium: light-dark(var(--d300-bleached-silk), var(--d200-bleached-silk));
-      --icon-dark: light-dark(var(--d600-bleached-silk), var(--d100-bleached-silk));
+      --icon-light: light-dark(var(--white), oklch(from var(--base-night-rider) calc(l * 0.1) c h));
+      --icon-medium: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.7) c h), oklch(from var(--base-bleached-silk) calc(l * 0.8) c h));
+      --icon-dark: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.4) c h), oklch(from var(--base-bleached-silk) calc(l * 0.9) c h));
       --icon-darkest: light-dark(var(--base-night-rider), var(--base-bleached-silk));
 
-      --icon-dark-green: light-dark(var(--d600-cockatoo), var(--l600-cockatoo));
-      --icon-dark-pink: light-dark(var(--d600-lustful-wishes), var(--l600-lustful-wishes));
-      --icon-dark-blue: light-dark(var(--d400-xavier-blue), var(--l600-xavier-blue));
-      --icon-light-green: light-dark(var(--d100-cockatoo), var(--d300-cockatoo));
-      --icon-light-pink: light-dark(var(--d100-lustful-wishes), var(--d200-lustful-wishes));
-      --icon-light-blue: light-dark(var(--d100-xavier-blue), var(--d400-xavier-blue));
+      --icon-dark-green: light-dark(oklch(from var(--base-cockatoo) calc(l * 0.4) c h), oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
+      --icon-dark-pink: light-dark(oklch(from var(--base-lustful-wishes) calc(l * 0.4) c h), oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h));
+      --icon-dark-blue: light-dark(oklch(from var(--base-xavier-blue) calc(l * 0.6) c h), oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h));
+      --icon-light-green: light-dark(oklch(from var(--base-cockatoo) calc(l * 0.9) c h), oklch(from var(--base-cockatoo) calc(l * 0.7) c h));
+      --icon-light-pink: light-dark(oklch(from var(--base-lustful-wishes) calc(l * 0.9) c h), oklch(from var(--base-lustful-wishes) calc(l * 0.8) c h));
+      --icon-light-blue: light-dark(oklch(from var(--base-xavier-blue) calc(l * 0.9) c h), oklch(from var(--base-xavier-blue) calc(l * 0.6) c h));
 
-      --button-shadow: light-dark(var(--d200-bleached-silk), var(--d800-bleached-silk));
-      --button-dropshow: light-dark(alpha(from var(--d600-night-rider)/25%), alpha(from var(--d600-night-rider)/25%));
+      --button-shadow: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.8) c h), oklch(from var(--base-bleached-silk) calc(l * 0.2) c h));
+      --button-dropshow: light-dark(oklch(from var(--base-night-rider) calc(l * 0.4) c h / 25%), oklch(from var(--base-night-rider) calc(l * 0.4) c h / 25%));
 
       --hover-green: light-dark(var(--base-cockatoo), var(--base-cockatoo));
       --hover-pink: light-dark(var(--base-lustful-wishes), var(--base-lustful-wishes));
       --hover-blue: light-dark(var(--base-xavier-blue), var(--base-xavier-blue));
 
-      --background-darkest: light-dark(var(--d900-night-rider), var(--l700-night-rider));
-      --background-darker: light-dark(var(--d400-night-rider), var(--l400-night-rider));
-      --background-dark: light-dark(var(--l800-night-rider), var(--l100-eclipse));
+      --background-darkest: light-dark(oklch(from var(--base-night-rider) calc(l * 0.1) c h), oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.7) c h));
+      --background-darker: light-dark(oklch(from var(--base-night-rider) calc(l * 0.6) c h), oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.4) c h));
+      --background-dark: light-dark(oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.8) c h), oklch(from var(--base-eclipse) calc(l + (1 - l) * 0.1) c h));
       --background-medium: light-dark(var(--base-bleached-silk), var(--base-eclipse));
-      --background-light: light-dark(var(--white), var(--d100-eclipse));
-      --background-transparent: light-dark(alpha(from var(--white)/ 50%), alpha(from var(--base-eclipse)/ 50%));
-      --background-green: light-dark(var(--d200-cockatoo), var(--d500-cockatoo));
-      --background-green-bright: light-dark(var(--l200-cockatoo), var(--d200-cockatoo));
-      --background-pink: light-dark(var(--l100-lustful-wishes), var(--d100-lustful-wishes));
-      --background-blue: light-dark(var(--l100-xavier-blue), var(--d100-xavier-blue));
-      --background-green-light: light-dark(var(--l600-cockatoo), var(--d600-cockatoo));
-      --background-pink-light: light-dark(var(--l600-lustful-wishes), var(--d600-lustful-wishes));
-      --background-blue-light: light-dark(var(--l600-xavier-blue), var(--d600-xavier-blue));
-      --background-green-lighter: light-dark(var(--l900-cockatoo), var(--d600-cockatoo));
-      --background-pink-lighter: light-dark(var(--l900-lustful-wishes), var(--d600-lustful-wishes));
-      --background-blue-lighter: light-dark(var(--l900-xavier-blue), var(--d600-xavier-blue));
+      --background-light: light-dark(var(--white), oklch(from var(--base-eclipse) calc(l * 0.9) c h));
+      --background-transparent: light-dark(oklch(from var(--white) l c h / 50%), oklch(from var(--base-eclipse) l c h / 50%));
+      --background-green: light-dark(oklch(from var(--base-cockatoo) calc(l * 0.8) c h), oklch(from var(--base-cockatoo) calc(l * 0.5) c h));
+      --background-green-bright: light-dark(oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.2) c h), oklch(from var(--base-cockatoo) calc(l * 0.8) c h));
+      --background-pink: light-dark(oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.1) c h), oklch(from var(--base-lustful-wishes) calc(l * 0.9) c h));
+      --background-blue: light-dark(oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.1) c h), oklch(from var(--base-xavier-blue) calc(l * 0.9) c h));
+      --background-green-light: light-dark(oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h), oklch(from var(--base-cockatoo) calc(l * 0.4) c h));
+      --background-pink-light: light-dark(oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h), oklch(from var(--base-lustful-wishes) calc(l * 0.4) c h));
+      --background-blue-light: light-dark(oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h), oklch(from var(--base-xavier-blue) calc(l * 0.4) c h));
+      --background-green-lighter: light-dark(oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.9) c h), oklch(from var(--base-cockatoo) calc(l * 0.4) c h));
+      --background-pink-lighter: light-dark(oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.9) c h), oklch(from var(--base-lustful-wishes) calc(l * 0.4) c h));
+      --background-blue-lighter: light-dark(oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.9) c h), oklch(from var(--base-xavier-blue) calc(l * 0.4) c h));
 
-      --card-border: light-dark(var(--d100-bleached-silk), var(--d100-eclipse));
-      --card-shadow: light-dark(alpha(from var(--base-eclipse)/ 5%), alpha(from var(--base-eclipse)/ 5%));
+      --card-border: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.9) c h), oklch(from var(--base-eclipse) calc(l * 0.9) c h));
+      --card-shadow: light-dark(oklch(from var(--base-eclipse) l c h / 5%), oklch(from var(--base-eclipse) l c h / 5%));
 
-      --text-darkest: light-dark(var(--d700-bleached-silk), var(--base-bleached-silk));
-      --text-dark: light-dark(var(--d600-bleached-silk), var(--d100-bleached-silk));
-      --text-medium: light-dark(var(--d500-bleached-silk), var(--d200-bleached-silk));
-      --text-light: light-dark(var(--d300-bleached-silk), var(--d300-bleached-silk));
-      --text-lightest: light-dark(var(--white), var(--l100-night-rider));
-      --text-green: light-dark(var(--d600-cockatoo), var(--l600-cockatoo));
-      --text-green-light: light-dark(var(--d600-cockatoo), var(--l600-cockatoo));
-      --text-pink: light-dark(var(--d600-lustful-wishes), var(--l600-lustful-wishes));
-      --text-blue: light-dark(var(--d400-xavier-blue), var(--l600-xavier-blue));
-
+      --text-darkest: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.3) c h), var(--base-bleached-silk));
+      --text-dark: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.4) c h), oklch(from var(--base-bleached-silk) calc(l * 0.9) c h));
+      --text-medium: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.5) c h), oklch(from var(--base-bleached-silk) calc(l * 0.8) c h));
+      --text-light: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.7) c h), oklch(from var(--base-bleached-silk) calc(l * 0.7) c h));
+      --text-lightest: light-dark(var(--white), oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.1) c h));
+      --text-green: light-dark(oklch(from var(--base-cockatoo) calc(l * 0.4) c h), oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
+      --text-green-light: light-dark(oklch(from var(--base-cockatoo) calc(l * 0.4) c h), oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
+      --text-pink: light-dark(oklch(from var(--base-lustful-wishes) calc(l * 0.4) c h), oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h));
+      --text-blue: light-dark(oklch(from var(--base-xavier-blue) calc(l * 0.6) c h), oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h));
       /* Typografie */
       font-family: 'TASA Orbiter', sans-serif;
 
