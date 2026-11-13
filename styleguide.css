@@ -244,35 +244,35 @@
    /* ! MAKE SURE YOU HAVE THIS FONT IN YOUR REPO */
    @font-face {
       font-family: "TASA Orbiter";
-      src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.ttf);
+      src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.ttf);
       font-weight: 400;
       font-style: normal;
    }
 
    @font-face {
       font-family: "TASA Orbiter";
-      src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-Medium.ttf);
+      src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Medium.ttf);
       font-weight: 500;
       font-style: normal;
    }
 
    @font-face {
       font-family: "TASA Orbiter";
-      src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-SemiBold.ttf);
+      src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-SemiBold.ttf);
       font-weight: 600;
       font-style: normal;
    }
 
    @font-face {
       font-family: "TASA Orbiter";
-      src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-Bold.ttf);
+      src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Bold.ttf);
       font-weight: 700;
       font-style: normal;
    }
 
    @font-face {
       font-family: "TASA Orbiter";
-      src: url(assets/fonts/TASA_Orbiter/static/TASAOrbiter-ExtraBold.ttf);
+      src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-ExtraBold.ttf);
       font-weight: 800;
       font-style: normal;
    }
