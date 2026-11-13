@@ -144,4 +144,239 @@
       background-color: var(--background-medium);
    }
 
+   /* MARK: block qoute */
+   blockquote {}
+
+   blockquote:before,
+   q:before {
+      content: '“';
+   }
+
+   blockquote:after,
+   q:after {
+      content: '”';
+   }
+
+   /* MARK: Buttons & Anchors */
+
+   button,
+   a {
+      font: inherit;
+      border: none;
+
+      /* Change these for the rainbow colors*/
+      --content-color: var(--text-dark);
+      --content-color-hover: var(--text-lightest);
+      --background-color: var(--background-light);
+      --background-color-hover: var(--background-darkest);
+
+
+      /* Use these in your svg with var(--content-color) */
+      --content: var(--content-color);
+      --background: var(--background-color);
+
+      color: var(--content);
+      background-color: var(--background);
+
+      &:hover,
+      &:focus-visible {
+         --content: var(--content-color-hover);
+         --background: var(--background-color-hover);
+      }
+
+      &:active {
+         --content: var(--content-color);
+         --background: var(--background-color);
+      }
+
+      /* For when a button has to look pressed */
+      &.active {
+         --content: var(--content-color-hover);
+         --background: var(--background-color-hover);
+      }
+   }
+
+   .button-raised {
+      box-shadow: 0px 4px 0px var(--button-shadow);
+      translate: 0px -4px;
+      border-radius: 8px;
+
+      @media (prefers-reduced-motion: no-preference) {
+         transition: 0.1s;
+      }
+
+      &:hover,
+      &:focus-visible {
+         box-shadow: 0px 6px 0px var(--button-shadow);
+         translate: 0px -6px;
+      }
+
+      &:active {
+         box-shadow: 0px 0px 0px var(--button-shadow);
+         translate: 0px 0px;
+      }
+
+      &.active {
+         box-shadow: 0px 0px 0px var(--button-shadow);
+         translate: 0px 0px;
+      }
+   }
+
+   .button-flat {
+      border-radius: 8px;
+   }
+
+   .button-tab {
+      position: relative;
+
+
+      &:hover,
+      &:focus-visible {
+         --content: var(--content-color);
+         --background: var(--background-color);
+
+
+         &::before {
+            height: 6px;
+            background: var(--icon-dark);
+         }
+      }
+
+      &:active {
+         --content: var(--content-color);
+         --background: var(--background-color);
+
+         &::before {
+            height: 1px;
+         }
+      }
+
+      &.active {
+         --content: var(--content-color);
+         --background: var(--background-color);
+
+         &::before {
+            height: 6px;
+            background: var(--icon-dark);
+         }
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         place-self: center;
+         top: -100%;
+         left: 0;
+         right: 0;
+         bottom: 0;
+
+         width: 80%;
+         height: 4px;
+         background: var(--icon-medium);
+
+         @media (prefers-reduced-motion: no-preference) {
+            transition: 0.1s;
+         }
+      }
+   }
+
+
+   /* MARK: Images */
+
+   img {
+      width: 100%;
+      display: block;
+   }
+
+   .image-pill-vertical {
+      aspect-ratio: 106/290;
+      border-radius: 9999px;
+      object-fit: cover;
+   }
+
+   .image-pill-vertical-wide {
+      aspect-ratio: 74/158;
+      border-radius: 9999px;
+      object-fit: cover;
+   }
+
+   .image-pill-horizontal {
+      aspect-ratio: 74/47;
+      border-radius: 9999px;
+      object-fit: cover;
+      object-position: 0 10%;
+   }
+
+   .image-circle {
+      aspect-ratio: 1/1;
+      border-radius: 9999px;
+      object-fit: cover;
+      object-position: 0 10%;
+      border: 4px solid var(--background-light);
+   }
+
+   .image-block {
+      aspect-ratio: 356/400;
+      border-radius: 8px 8px 0px 0px;
+      object-fit: cover;
+      object-position: 0 20%;
+      mask-image: linear-gradient(white 70%, black 90%);
+      mask-mode: luminance;
+   }
+
+   .image-block-horizontal {
+      aspect-ratio: 356/149;
+      object-fit: cover;
+      object-position: 0 15%;
+   }
+
+   .image-block-horizontal-round {
+      aspect-ratio: 644/248;
+      object-fit: cover;
+      border-radius: 16px;
+      object-position: 0 15%;
+   }
+
+   /* MARK: list */
+   ol,
+   ul,
+   dl,
+   menu {
+      list-style-type: "";
+      padding: 0;
+   }
+
+   /* For a list of .image-circle */
+   .image-stack {
+      display: grid;
+      grid-auto-columns: 1fr;
+      column-gap: 10%;
+
+      li {
+         grid-column: sibling-index() / calc(sibling-index() + 2);
+         grid-row: 1;
+      }
+   }
+
+   /* For the ul that the meshterms are in */
+   .mesh-terms {
+      display: flex;
+      overflow-x: scroll;
+      gap: 10px;
+      z-index: 1;
+      height: min-content;
+      scrollbar-width: none;
+
+      li {
+         width: max-content;
+         color: var(--text-medium);
+         border: 1px solid var(--text-medium);
+         border-radius: 9999px;
+         padding: 10px;
+         font-weight: 400;
+         font-size: 1rem;
+         flex-basis: content;
+         flex-shrink: 0;
+      }
+   }
 }
