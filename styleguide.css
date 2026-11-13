@@ -113,6 +113,15 @@
 
    }
 
+   /* MARK: Reset */
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      scrollbar-width: none;
+   }
+
    h1 {
       font-weight: 500;
       font-size: 1.5em;
@@ -163,6 +172,8 @@
    a {
       font: inherit;
       border: none;
+      text-decoration: none;
+      cursor: pointer;
 
       /* Change these for the rainbow colors*/
       --content-color: var(--text-dark);
