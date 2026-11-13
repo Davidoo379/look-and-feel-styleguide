@@ -187,6 +187,9 @@
       --background-green-light: light-dark(var(--l600-cockatoo), var(--d600-cockatoo));
       --background-pink-light: light-dark(var(--l600-lustful-wishes), var(--d600-lustful-wishes));
       --background-blue-light: light-dark(var(--l600-xavier-blue), var(--d600-xavier-blue));
+      --background-green-lighter: light-dark(var(--l900-cockatoo), var(--d800-cockatoo));
+      --background-pink-lighter: light-dark(var(--l900-lustful-wishes), var(--d800-lustful-wishes));
+      --background-blue-lighter: light-dark(var(--l900-xavier-blue), var(--d800-xavier-blue));
 
       --card-border: light-dark(var(--d100-bleached-silk), var(--d100-eclipse));
       --card-shadow: light-dark(alpha(from var(--base-eclipse)/ 5%), alpha(from var(--base-eclipse)/ 5%));
