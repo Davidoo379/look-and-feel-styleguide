@@ -45,7 +45,7 @@
    /* Kleuren */
    :root {
       /* MARK: colors */
-      /* MARK: colors */
+      /* MARK: base colors */
       --base-xavier-blue: #66b3df;
       --base-cockatoo: #66c7b4;
       --base-lustful-wishes: #d6439f;
@@ -59,6 +59,8 @@
       /* MARK: color-scheme */
       color-scheme: light dark;
 
+
+      /* MARK: icon colors */
       --icon-light: light-dark(var(--white), oklch(from var(--base-night-rider) calc(l * 0.1) c h));
       --icon-medium: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.7) c h), oklch(from var(--base-bleached-silk) calc(l * 0.8) c h));
       --icon-dark: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.4) c h), oklch(from var(--base-bleached-silk) calc(l * 0.9) c h));
@@ -71,13 +73,16 @@
       --icon-light-pink: light-dark(oklch(from var(--base-lustful-wishes) calc(l * 0.9) c h), oklch(from var(--base-lustful-wishes) calc(l * 0.8) c h));
       --icon-light-blue: light-dark(oklch(from var(--base-xavier-blue) calc(l * 0.9) c h), oklch(from var(--base-xavier-blue) calc(l * 0.6) c h));
 
+      /* MARK: icon colors */
       --button-shadow: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.8) c h), oklch(from var(--base-bleached-silk) calc(l * 0.2) c h));
       --button-dropshow: light-dark(oklch(from var(--base-night-rider) calc(l * 0.4) c h / 25%), oklch(from var(--base-night-rider) calc(l * 0.4) c h / 25%));
 
+      /* MARK: hover colors */
       --hover-green: light-dark(var(--base-cockatoo), var(--base-cockatoo));
       --hover-pink: light-dark(var(--base-lustful-wishes), var(--base-lustful-wishes));
       --hover-blue: light-dark(var(--base-xavier-blue), var(--base-xavier-blue));
 
+      /* MARK: background colors */
       --background-darkest: light-dark(oklch(from var(--base-night-rider) calc(l * 0.1) c h), oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.7) c h));
       --background-darker: light-dark(oklch(from var(--base-night-rider) calc(l * 0.6) c h), oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.4) c h));
       --background-dark: light-dark(oklch(from var(--base-night-rider) calc(l + (1 - l) * 0.8) c h), oklch(from var(--base-eclipse) calc(l + (1 - l) * 0.1) c h));
@@ -95,9 +100,11 @@
       --background-pink-lighter: light-dark(oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.9) c h), oklch(from var(--base-lustful-wishes) calc(l * 0.4) c h));
       --background-blue-lighter: light-dark(oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.9) c h), oklch(from var(--base-xavier-blue) calc(l * 0.4) c h));
 
+      /* MARK: card colors */
       --card-border: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.9) c h), oklch(from var(--base-eclipse) calc(l * 0.9) c h));
       --card-shadow: light-dark(oklch(from var(--base-eclipse) l c h / 5%), oklch(from var(--base-eclipse) l c h / 5%));
 
+      /* MARK: tect colors */
       --text-darkest: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.3) c h), var(--base-bleached-silk));
       --text-dark: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.4) c h), oklch(from var(--base-bleached-silk) calc(l * 0.9) c h));
       --text-medium: light-dark(oklch(from var(--base-bleached-silk) calc(l * 0.5) c h), oklch(from var(--base-bleached-silk) calc(l * 0.8) c h));
@@ -107,7 +114,8 @@
       --text-green-light: light-dark(oklch(from var(--base-cockatoo) calc(l * 0.4) c h), oklch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
       --text-pink: light-dark(oklch(from var(--base-lustful-wishes) calc(l * 0.4) c h), oklch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h));
       --text-blue: light-dark(oklch(from var(--base-xavier-blue) calc(l * 0.6) c h), oklch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h));
-      /* Typografie */
+
+      /* Mark: typografie */
       font-family: 'TASA Orbiter', sans-serif;
 
 
@@ -122,6 +130,7 @@
       scrollbar-width: none;
    }
 
+   /* MARK: headings & text */
    h1 {
       font-weight: 500;
       font-size: 1.5em;
@@ -148,6 +157,7 @@
       color: var(--text-dark);
    }
 
+   /* MARK: page background */
    html,
    body {
       background-color: var(--background-medium);
@@ -167,7 +177,6 @@
    }
 
    /* MARK: Buttons & Anchors */
-
    button,
    a {
       font: inherit;
@@ -207,6 +216,7 @@
       }
    }
 
+   /* MARK: button raised */
    .button-raised {
       box-shadow: 0px 4px 0px var(--button-shadow);
       translate: 0px -4px;
@@ -233,10 +243,12 @@
       }
    }
 
+   /* MARK: button flat */
    .button-flat {
       border-radius: 8px;
    }
 
+   /* MARK: button tab */
    .button-tab {
       position: relative;
 
@@ -299,6 +311,7 @@
       display: block;
    }
 
+   /* MARK: image shapes */
    .image-pill-vertical {
       aspect-ratio: 106/290;
       border-radius: 9999px;
@@ -358,6 +371,7 @@
    }
 
    /* For a list of .image-circle */
+   /* MARK: image stack */
    .image-stack {
       display: grid;
       grid-auto-columns: 1fr;
@@ -370,6 +384,7 @@
    }
 
    /* For the ul that the meshterms are in */
+   /* MARK: mesh terms */
    .mesh-terms {
       display: flex;
       overflow-x: scroll;
