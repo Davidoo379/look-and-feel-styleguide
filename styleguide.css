@@ -66,21 +66,21 @@
 
 
       /* MARK: icon colors */
-      --icon-light: light-dark(var(--white), lch(from var(--base-night-rider) calc(l * 0.1) c h));
-      --icon-medium: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.7) c h), lch(from var(--base-bleached-silk) calc(l * 0.8) c h));
-      --icon-dark: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.4) c h), lch(from var(--base-bleached-silk) calc(l * 0.9) c h));
+      --icon-light: light-dark(var(--white), hsl(from var(--base-night-rider) h s calc(l * 0.1)));
+      --icon-medium: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.7)), hsl(from var(--base-bleached-silk) h s calc(l * 0.8)));
+      --icon-dark: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.4)), hsl(from var(--base-bleached-silk) h s calc(l * 0.9)));
       --icon-darkest: light-dark(var(--base-night-rider), var(--base-bleached-silk));
 
-      --icon-dark-green: light-dark(lch(from var(--base-cockatoo) calc(l * 0.4) c h), lch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
-      --icon-dark-pink: light-dark(lch(from var(--base-lustful-wishes) calc(l * 0.4) c h), lch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h));
-      --icon-dark-blue: light-dark(lch(from var(--base-xavier-blue) calc(l * 0.6) c h), lch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h));
-      --icon-light-green: light-dark(lch(from var(--base-cockatoo) calc(l * 0.9) c h), lch(from var(--base-cockatoo) calc(l * 0.7) c h));
-      --icon-light-pink: light-dark(lch(from var(--base-lustful-wishes) calc(l * 0.9) c h), lch(from var(--base-lustful-wishes) calc(l * 0.8) c h));
-      --icon-light-blue: light-dark(lch(from var(--base-xavier-blue) calc(l * 0.9) c h), lch(from var(--base-xavier-blue) calc(l * 0.6) c h));
+      --icon-dark-green: light-dark(hsl(from var(--base-cockatoo) h s calc(l * 0.4)), hsl(from var(--base-cockatoo) h s calc(l + (100 - l) * 0.6)));
+      --icon-dark-pink: light-dark(hsl(from var(--base-lustful-wishes) h s calc(l * 0.4)), hsl(from var(--base-lustful-wishes) h s calc(l + (100 - l) * 0.6)));
+      --icon-dark-blue: light-dark(hsl(from var(--base-xavier-blue) h s calc(l * 0.6)), hsl(from var(--base-xavier-blue) h s calc(l + (100 - l) * 0.6)));
+      --icon-light-green: light-dark(hsl(from var(--base-cockatoo) h s calc(l * 0.9)), hsl(from var(--base-cockatoo) h s calc(l * 0.7)));
+      --icon-light-pink: light-dark(hsl(from var(--base-lustful-wishes) h s calc(l * 0.9)), hsl(from var(--base-lustful-wishes) h s calc(l * 0.8)));
+      --icon-light-blue: light-dark(hsl(from var(--base-xavier-blue) h s calc(l * 0.9)), hsl(from var(--base-xavier-blue) h s calc(l * 0.6)));
 
       /* MARK: icon colors */
-      --button-shadow: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.8) c h), lch(from var(--base-bleached-silk) calc(l * 0.2) c h));
-      --button-dropshow: light-dark(lch(from var(--base-night-rider) calc(l * 0.4) c h / 25%), lch(from var(--base-night-rider) calc(l * 0.4) c h / 25%));
+      --button-shadow: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.8)), hsl(from var(--base-bleached-silk) h s calc(l * 0.2)));
+      --button-dropshow: light-dark(hsl(from var(--base-night-rider) h s calc(l * 0.4) / 25%), hsl(from var(--base-night-rider) h s calc(l * 0.4) / 25%));
 
       /* MARK: hover colors */
       --hover-green: light-dark(var(--base-cockatoo), var(--base-cockatoo));
@@ -88,38 +88,37 @@
       --hover-blue: light-dark(var(--base-xavier-blue), var(--base-xavier-blue));
 
       /* MARK: background colors */
-      --background-darkest: light-dark(lch(from var(--base-night-rider) calc(l * 0.1) c h), lch(from var(--base-night-rider) calc(l + (1 - l) * 0.7) c h));
-      --background-darker: light-dark(lch(from var(--base-night-rider) calc(l * 0.6) c h), lch(from var(--base-night-rider) calc(l + (1 - l) * 0.4) c h));
-      --background-dark: light-dark(lch(from var(--base-night-rider) calc(l + (1 - l) * 0.8) c h), lch(from var(--base-eclipse) calc(l + (1 - l) * 0.1) c h));
+      --background-darkest: light-dark(hsl(from var(--base-night-rider) h s calc(l * 0.1)), hsl(from var(--base-night-rider) h s calc(l + (100 - l) * 0.7)));
+      --background-darker: light-dark(hsl(from var(--base-night-rider) h s calc(l * 0.6)), hsl(from var(--base-night-rider) h s calc(l + (100 - l) * 0.4)));
+      --background-dark: light-dark(hsl(from var(--base-night-rider) h s calc(l + (100 - l) * 0.8)), hsl(from var(--base-eclipse) h s calc(l + (100 - l) * 0.1)));
       --background-medium: light-dark(var(--base-bleached-silk), var(--base-eclipse));
-      --background-light: light-dark(var(--white), lch(from var(--base-eclipse) calc(l * 0.9) c h));
-      --background-transparent: light-dark(lch(from var(--white) l c h / 50%), lch(from var(--base-eclipse) l c h / 50%));
-      --background-green: light-dark(lch(from var(--base-cockatoo) calc(l * 0.8) c h), lch(from var(--base-cockatoo) calc(l * 0.5) c h));
-      --background-green-bright: light-dark(lch(from var(--base-cockatoo) calc(l + (1 - l) * 0.2) c h), lch(from var(--base-cockatoo) calc(l * 0.8) c h));
-      --background-pink: light-dark(lch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.1) c h), lch(from var(--base-lustful-wishes) calc(l * 0.9) c h));
-      --background-blue: light-dark(lch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.1) c h), lch(from var(--base-xavier-blue) calc(l * 0.9) c h));
-      --background-green-light: light-dark(lch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h), lch(from var(--base-cockatoo) calc(l * 0.4) c h));
-      --background-pink-light: light-dark(lch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h), lch(from var(--base-lustful-wishes) calc(l * 0.4) c h));
-      --background-blue-light: light-dark(lch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h), lch(from var(--base-xavier-blue) calc(l * 0.4) c h));
-      --background-green-lighter: light-dark(lch(from var(--base-cockatoo) calc(l + (1 - l) * 0.9) c h), lch(from var(--base-cockatoo) calc(l * 0.4) c h));
-      --background-pink-lighter: light-dark(lch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.9) c h), lch(from var(--base-lustful-wishes) calc(l * 0.4) c h));
-      --background-blue-lighter: light-dark(lch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.9) c h), lch(from var(--base-xavier-blue) calc(l * 0.4) c h));
+      --background-light: light-dark(var(--white), hsl(from var(--base-eclipse) h s calc(l * 0.9)));
+      --background-transparent: light-dark(hsl(from var(--white) h s l / 50%), hsl(from var(--base-eclipse) h s l / 50%));
+      --background-green: light-dark(hsl(from var(--base-cockatoo) h s calc(l * 0.8)), hsl(from var(--base-cockatoo) h s calc(l * 0.5)));
+      --background-green-bright: light-dark(hsl(from var(--base-cockatoo) h s calc(l + (100 - l) * 0.2)), hsl(from var(--base-cockatoo) h s calc(l * 0.8)));
+      --background-pink: light-dark(hsl(from var(--base-lustful-wishes) h s calc(l + (100 - l) * 0.1)), hsl(from var(--base-lustful-wishes) h s calc(l * 0.9)));
+      --background-blue: light-dark(hsl(from var(--base-xavier-blue) h s calc(l + (100 - l) * 0.1)), hsl(from var(--base-xavier-blue) h s calc(l * 0.9)));
+      --background-green-light: light-dark(hsl(from var(--base-cockatoo) h s calc(l + (100 - l) * 0.6)), hsl(from var(--base-cockatoo) h s calc(l * 0.4)));
+      --background-pink-light: light-dark(hsl(from var(--base-lustful-wishes) h s calc(l + (100 - l) * 0.6)), hsl(from var(--base-lustful-wishes) h s calc(l * 0.4)));
+      --background-blue-light: light-dark(hsl(from var(--base-xavier-blue) h s calc(l + (100 - l) * 0.6)), hsl(from var(--base-xavier-blue) h s calc(l * 0.4)));
+      --background-green-lighter: light-dark(hsl(from var(--base-cockatoo) h s calc(l + (100 - l) * 0.9)), hsl(from var(--base-cockatoo) h s calc(l * 0.4)));
+      --background-pink-lighter: light-dark(hsl(from var(--base-lustful-wishes) h s calc(l + (100 - l) * 0.9)), hsl(from var(--base-lustful-wishes) h s calc(l * 0.4)));
+      --background-blue-lighter: light-dark(hsl(from var(--base-xavier-blue) h s calc(l + (100 - l) * 0.9)), hsl(from var(--base-xavier-blue) h s calc(l * 0.4)));
 
       /* MARK: card colors */
-      --card-border: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.9) c h), lch(from var(--base-eclipse) calc(l * 0.9) c h));
-      --card-shadow: light-dark(lch(from var(--base-eclipse) l c h / 5%), lch(from var(--base-eclipse) l c h / 5%));
+      --card-border: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.9)), hsl(from var(--base-eclipse) h s calc(l * 0.9)));
+      --card-shadow: light-dark(hsl(from var(--base-eclipse) h s l / 5%), hsl(from var(--base-eclipse) h s l / 5%));
 
       /* MARK: tect colors */
-      --text-darkest: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.3) c h), var(--base-bleached-silk));
-      --text-dark: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.4) c h), lch(from var(--base-bleached-silk) calc(l * 0.9) c h));
-      --text-medium: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.5) c h), lch(from var(--base-bleached-silk) calc(l * 0.8) c h));
-      --text-light: light-dark(lch(from var(--base-bleached-silk) calc(l * 0.7) c h), lch(from var(--base-bleached-silk) calc(l * 0.7) c h));
-      --text-lightest: light-dark(var(--white), lch(from var(--base-night-rider) calc(l + (1 - l) * 0.1) c h));
-      --text-green: light-dark(lch(from var(--base-cockatoo) calc(l * 0.4) c h), lch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
-      --text-green-light: light-dark(lch(from var(--base-cockatoo) calc(l * 0.4) c h), lch(from var(--base-cockatoo) calc(l + (1 - l) * 0.6) c h));
-      --text-pink: light-dark(lch(from var(--base-lustful-wishes) calc(l * 0.4) c h), lch(from var(--base-lustful-wishes) calc(l + (1 - l) * 0.6) c h));
-      --text-blue: light-dark(lch(from var(--base-xavier-blue) calc(l * 0.6) c h), lch(from var(--base-xavier-blue) calc(l + (1 - l) * 0.6) c h));
-
+      --text-darkest: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.3)), var(--base-bleached-silk));
+      --text-dark: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.4)), hsl(from var(--base-bleached-silk) h s calc(l * 0.9)));
+      --text-medium: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.5)), hsl(from var(--base-bleached-silk) h s calc(l * 0.8)));
+      --text-light: light-dark(hsl(from var(--base-bleached-silk) h s calc(l * 0.7)), hsl(from var(--base-bleached-silk) h s calc(l * 0.7)));
+      --text-lightest: light-dark(var(--white), hsl(from var(--base-night-rider) h s calc(l + (100 - l) * 0.1)));
+      --text-green: light-dark(hsl(from var(--base-cockatoo) h s calc(l * 0.4)), hsl(from var(--base-cockatoo) h s calc(l + (100 - l) * 0.6)));
+      --text-green-light: light-dark(hsl(from var(--base-cockatoo) h s calc(l * 0.4)), hsl(from var(--base-cockatoo) h s calc(l + (100 - l) * 0.6)));
+      --text-pink: light-dark(hsl(from var(--base-lustful-wishes) h s calc(l * 0.4)), hsl(from var(--base-lustful-wishes) h s calc(l + (100 - l) * 0.6)));
+      --text-blue: light-dark(hsl(from var(--base-xavier-blue) h s calc(l * 0.6)), hsl(from var(--base-xavier-blue) h s calc(l + (100 - l) * 0.6)));
       /* Mark: typografie */
       font-family: 'TASA Orbiter', sans-serif;
 
