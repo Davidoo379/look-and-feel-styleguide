@@ -188,7 +188,6 @@
    h1 {
       font-weight: 500;
       font-size: 1.5em;
-      /* ? v MIGHT NOT WORK v */
       letter-spacing: 10%;
       color: var(--text-dark);
    }
@@ -469,6 +468,65 @@
          font-size: 1rem;
          flex-basis: content;
          flex-shrink: 0;
+      }
+   }
+
+   /* MARK: select and option element */
+   select {
+      background-color: var(--background-dark);
+      font-size: 1em;
+      text-align: center;
+      border-radius: 8px;
+      padding: 8px;
+      height: fit-content;
+      width: 10em;
+      text-wrap: nowrap;
+      color: var(--text-dark);
+
+      &:open {
+         border-radius: 8px 8px 0px 0px;
+         background-color: var(--background-darkest);
+         color: var(--text-lightest);
+      }
+
+      appearance: base-select;
+      border: none;
+
+      &::picker(select) {
+         appearance: base-select;
+         border: none;
+         color: var(--text-lightest);
+      }
+
+      &::picker-icon {
+         content: "▾";
+         scale: 1.4;
+         transition: rotate 0.2s;
+         rotate: 90deg;
+      }
+
+      &:open::picker-icon {
+         rotate: 0deg;
+      }
+
+      option:last-child {
+         border-radius: 0px 0px 8px 8px;
+      }
+
+      option {
+         background-color: var(--background-darkest);
+         font-weight: 400;
+         padding: 8px;
+         transition: 0.2s;
+
+         &:hover {
+            color: var(--text-darkest);
+            background-color: var(--background-light);
+         }
+
+         &::checkmark {
+            display: none;
+         }
       }
    }
 }
