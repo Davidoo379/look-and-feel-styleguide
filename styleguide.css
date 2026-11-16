@@ -294,7 +294,7 @@
    /* MARK: button flat */
    .button-plain {
       border-radius: 8px;
-      --content-color-hover: currentColor;
+      --content-color-hover: var(--content-color);
       --background-color: transparent;
       --background-color-hover: transparent;
    }
