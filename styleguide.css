@@ -235,6 +235,8 @@
       border: none;
       text-decoration: none;
       cursor: pointer;
+      border-radius: 8px;
+      pad: .5em;
 
       /* Change these for the rainbow colors*/
       --content-color: var(--text-dark);
@@ -242,29 +244,24 @@
       --background-color: var(--background-light);
       --background-color-hover: var(--background-darkest);
 
-
-      /* Use these in your svg with var(--content-color) */
-      --content: var(--content-color);
-      --background: var(--background-color);
-
-      color: var(--content);
-      background-color: var(--background);
+      color: var(--content-color);
+      background-color: var(--background-color);
 
       &:hover,
       &:focus-visible {
-         --content: var(--content-color-hover);
-         --background: var(--background-color-hover);
+         color: var(--content-color-hover);
+         background-color: var(--background-color-hover);
       }
 
       &:active {
-         --content: var(--content-color);
-         --background: var(--background-color);
+         color: var(--content-color);
+         background-color: var(--background-color);
       }
 
       /* For when a button has to look pressed */
       &.active {
-         --content: var(--content-color-hover);
-         --background: var(--background-color-hover);
+         color: var(--content-color-hover);
+         background-color: var(--background-color-hover);
       }
    }
 
@@ -272,7 +269,6 @@
    .button-raised {
       box-shadow: 0px 4px 0px var(--button-shadow);
       translate: 0px -4px;
-      border-radius: 8px;
 
       @media (prefers-reduced-motion: no-preference) {
          transition: 0.1s;
@@ -296,43 +292,35 @@
    }
 
    /* MARK: button flat */
-   .button-flat {
+   .button-plain {
       border-radius: 8px;
+      --content-color-hover: currentColor;
+      --background-color: transparent;
+      --background-color-hover: transparent;
    }
 
    /* MARK: button tab */
    .button-tab {
       position: relative;
 
-
       &:hover,
       &:focus-visible {
-         --content: var(--content-color);
-         --background: var(--background-color);
-
-
          &::before {
             height: 6px;
-            background: var(--icon-dark);
+            background: var(--text-dark);
          }
       }
 
       &:active {
-         --content: var(--content-color);
-         --background: var(--background-color);
-
          &::before {
             height: 1px;
          }
       }
 
       &.active {
-         --content: var(--content-color);
-         --background: var(--background-color);
-
          &::before {
             height: 6px;
-            background: var(--icon-dark);
+            background: var(--text-dark);
          }
       }
 
@@ -347,7 +335,7 @@
 
          width: 80%;
          height: 4px;
-         background: var(--icon-medium);
+         background: var(--text-medium);
 
          @media (prefers-reduced-motion: no-preference) {
             transition: 0.1s;
