@@ -210,7 +210,7 @@
       border-radius: 8px;
       padding: 16px;
       object-fit: cover;
-      background-color: var(--background-green-lighter);
+      background-color: var(--background-green-light);
       color: var(--text-green);
 
       line-clamp: 2;
