@@ -2,7 +2,7 @@
 Voeg deze link toe in je `head`
 `<link rel="stylesheet" href="https://davidoo379.github.io/look-and-feel-styleguide/styleguide.css">`
 
-[Style guide](https://github.com/Davidoo379/look-and-feel-styleguide)
+[Style guide]([https://github.com/Davidoo379/look-and-feel-styleguide](https://www.figma.com/design/EJEXRWKJcgaRjUzIWEhgq9/OVERDRACHT-Pediaconnect--FINAL-version-NVK-kleuren-?node-id=6-2&t=dWQGE4JEgOtkt0hV-1))
 
 
 # Styleguide
