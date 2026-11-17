@@ -205,6 +205,7 @@
       font-weight: 400;
       font-size: 1em;
       color: var(--text-dark);
+      max-width: 23em;
    }
 
    /* MARK: page background */
@@ -222,6 +223,7 @@
       object-fit: cover;
       background-color: var(--background-green-light);
       color: var(--text-green);
+      max-width: 23em;
 
       line-clamp: 2;
       overflow: hidden;
