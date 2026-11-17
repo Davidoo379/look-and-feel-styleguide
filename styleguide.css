@@ -300,6 +300,17 @@
          translate: 0px 0px;
       }
    }
+   /* MARK: cards */
+   .card {
+      display: grid;
+      background-color: var(--background-light);
+      border-radius: 1.5rem;
+      border: 3px solid var(--background-medium);
+      padding: 1rem;
+      box-shadow: 0px 0px 15px var(--card-shadow);
+      width: 348px;
+      height: 300px;
+      }
 
    /* MARK: button flat */
    .button-plain {
