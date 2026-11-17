@@ -206,6 +206,10 @@
       font-size: 1em;
       color: var(--text-dark);
       max-width: 23em;
+
+      @media (prefers-color-scheme: dark) {
+         line-height: 1.32;
+      }
    }
 
    /* MARK: page background */
@@ -228,6 +232,10 @@
       line-clamp: 2;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media (prefers-color-scheme: dark) {
+         line-height: 1.32;
+      }
    }
 
    blockquote:before,
