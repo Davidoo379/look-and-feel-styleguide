@@ -5,7 +5,7 @@
 @layer styleguide {
 
    @font-face {
-      font-family: "TASA Orbiter";
+      font-family: "TASA Orbiter", "Inter", sans-serif;
       src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.woff2),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.woff),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Regular.ttf);
@@ -15,7 +15,7 @@
    }
 
    @font-face {
-      font-family: "TASA Orbiter";
+      font-family: "TASA Orbiter", "Inter", sans-serif;
       src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Medium.woff2),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Medium.woff),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Medium.ttf);
@@ -25,7 +25,7 @@
    }
 
    @font-face {
-      font-family: "TASA Orbiter";
+      font-family: "TASA Orbiter", "Inter", sans-serif;
       src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-SemiBold.woff2),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-SemiBold.woff),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-SemiBold.ttf);
@@ -35,7 +35,7 @@
    }
 
    @font-face {
-      font-family: "TASA Orbiter";
+      font-family: "TASA Orbiter", "Inter", sans-serif;
       src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Bold.woff2),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Bold.woff),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-Bold.ttf);
@@ -45,7 +45,7 @@
    }
 
    @font-face {
-      font-family: "TASA Orbiter";
+      font-family: "TASA Orbiter", "Inter", sans-serif;
       src: url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-ExtraBold.woff2),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-ExtraBold.woff),
          url(./assets/fonts/TASA_Orbiter/static/TASAOrbiter-ExtraBold.ttf);
@@ -205,6 +205,11 @@
       font-weight: 400;
       font-size: 1em;
       color: var(--text-dark);
+      max-width: 23em;
+
+      @media (prefers-color-scheme: dark) {
+         line-height: 1.32;
+      }
    }
 
    /* MARK: page background */
@@ -222,10 +227,15 @@
       object-fit: cover;
       background-color: var(--background-green-light);
       color: var(--text-green);
+      max-width: 23em;
 
       line-clamp: 2;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media (prefers-color-scheme: dark) {
+         line-height: 1.32;
+      }
    }
 
    blockquote:before,
@@ -300,6 +310,49 @@
          translate: 0px 0px;
       }
    }
+   /* MARK: cards */
+   .card {
+      display: grid;
+      background-color: var(--background-light);
+      border-radius: 1.5rem;
+      border: 3px solid var(--background-medium);
+      padding: 1rem;
+      box-shadow: 0px 0px 15px var(--card-shadow);
+      width: 348px;
+      height: 300px;
+      }
+
+   /* MARK: divider */
+   .divider {
+      &::after {
+         display: block;
+         --i: calc(100% / 14);
+         height: 2px;
+         content: "";
+         margin-inline: 3rem;
+         background-image:
+               linear-gradient(to right, var(--background-medium) calc(var(--i) / 2),
+                  transparent calc(var(--i) / 2) calc(var(--i) * 1.5),
+                  var(--background-medium) calc(var(--i) * 1.5) calc(var(--i) * 2.5),
+                  transparent calc(var(--i) * 2.5) calc(var(--i) * 3.5),
+                  var(--background-medium) calc(var(--i) * 3.5) calc(var(--i) * 4.5),
+                  transparent calc(var(--i) * 4.5) calc(var(--i) * 5.5),
+                  var(--background-medium) calc(var(--i) * 5.5) calc(var(--i) * 6.5),
+                  transparent calc(var(--i) * 6.5) calc(var(--i) * 7.5),
+                  var(--background-medium) calc(var(--i) * 7.5) calc(var(--i) * 8.5),
+                  transparent calc(var(--i) * 8.5) calc(var(--i) * 9.5),
+                  var(--background-medium) calc(var(--i) * 9.5) calc(var(--i) * 10.5),
+                  transparent calc(var(--i) * 10.5) calc(var(--i) * 11.5),
+                  var(--background-medium) calc(var(--i) * 11.5) calc(var(--i) * 12.5),
+                  transparent calc(var(--i) * 12.5) calc(var(--i) * 13.5),
+                  var(--background-medium) calc(var(--i) * 13.5));
+
+         @media (min-width: 900px) {
+               content: "";
+               background-image: none;
+         }
+      }
+   } 
 
    /* MARK: button flat */
    .button-plain {
