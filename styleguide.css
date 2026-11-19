@@ -332,21 +332,21 @@
          content: "";
          margin-inline: 3rem;
          background-image:
-            linear-gradient(to right, var(--background-medium) calc(var(--i) / 2),
+            linear-gradient(to right, var(--background-dark) calc(var(--i) / 2),
                transparent calc(var(--i) / 2) calc(var(--i) * 1.5),
-               var(--background-medium) calc(var(--i) * 1.5) calc(var(--i) * 2.5),
+               var(--background-dark) calc(var(--i) * 1.5) calc(var(--i) * 2.5),
                transparent calc(var(--i) * 2.5) calc(var(--i) * 3.5),
-               var(--background-medium) calc(var(--i) * 3.5) calc(var(--i) * 4.5),
+               var(--background-dark) calc(var(--i) * 3.5) calc(var(--i) * 4.5),
                transparent calc(var(--i) * 4.5) calc(var(--i) * 5.5),
-               var(--background-medium) calc(var(--i) * 5.5) calc(var(--i) * 6.5),
+               var(--background-dark) calc(var(--i) * 5.5) calc(var(--i) * 6.5),
                transparent calc(var(--i) * 6.5) calc(var(--i) * 7.5),
-               var(--background-medium) calc(var(--i) * 7.5) calc(var(--i) * 8.5),
+               var(--background-dark) calc(var(--i) * 7.5) calc(var(--i) * 8.5),
                transparent calc(var(--i) * 8.5) calc(var(--i) * 9.5),
-               var(--background-medium) calc(var(--i) * 9.5) calc(var(--i) * 10.5),
+               var(--background-dark) calc(var(--i) * 9.5) calc(var(--i) * 10.5),
                transparent calc(var(--i) * 10.5) calc(var(--i) * 11.5),
-               var(--background-medium) calc(var(--i) * 11.5) calc(var(--i) * 12.5),
+               var(--background-dark) calc(var(--i) * 11.5) calc(var(--i) * 12.5),
                transparent calc(var(--i) * 12.5) calc(var(--i) * 13.5),
-               var(--background-medium) calc(var(--i) * 13.5));
+               var(--background-dark) calc(var(--i) * 13.5));
 
          @media (min-width: 900px) {
             content: "";
@@ -491,9 +491,11 @@
    /* MARK: mesh terms */
    .mesh-terms {
       display: flex;
-      flex-wrap: wrap;
+      overflow-x: scroll;
       gap: 10px;
+      z-index: 1;
       height: min-content;
+      scrollbar-width: none;
 
       li {
          width: max-content;
@@ -599,4 +601,93 @@
          translate: 2em;
       }
    }
+
+   /* MARK: text field */
+   input[type="email"],
+   input[type="tel"],
+   input[type="text"],
+   input[type="search"],
+   textarea,
+   input[type="password"] {
+      background-color: transparent;
+      border: 2px solid var(--background-dark);
+      padding: .8em;
+      border-radius: 8px;
+
+      &::placeholder {
+         color: var(--text-light);
+         font: inherit;
+         font-size: 1em;
+         font-weight: 100;
+      }
+
+      &:user-invalid {
+         border-color: var(--text-pink-light);
+      }
+
+      &:user-valid {
+         border-color: var(--text-green-light);
+      }
+   }
+
+
+   .password-field {
+      display: grid;
+      grid-template-columns: 200px min-content;
+      grid-template-rows: min-content min-content;
+      place-items: center;
+
+      label {
+         grid-column: 1/2;
+         grid-row: 1/2;
+         width: 100%;
+      }
+
+      input {
+         grid-column: 1/2;
+         grid-row: 2/-1;
+         width: 100%;
+         border-radius: 8px 0px 0px 8px;
+         border-right: 0;
+         margin: 0;
+
+         &:focus {
+            border-color: var(--text-darkest);
+            outline: none;
+         }
+      }
+
+      &:has(input:focus) button {
+         border-color: var(--text-darkest);
+      }
+
+      button {
+         grid-column: 2/3;
+         grid-row: 2/-1;
+         place-self: start;
+         height: 100%;
+         width: 100%;
+         background-color: transparent;
+         border: 2px solid var(--background-dark);
+         border-radius: 0px 8px 8px 0px;
+         border-left: 0;
+         padding-right: .5em;
+
+         input:user-valid+& {
+            border-color: var(--text-green-light);
+         }
+
+
+         &:focus {
+            outline: none;
+
+            svg {
+               outline: 2px solid var(--text-darkest);
+               border-radius: 8px;
+            }
+         }
+      }
+   }
+
+
 }
