@@ -491,11 +491,9 @@
    /* MARK: mesh terms */
    .mesh-terms {
       display: flex;
-      overflow-x: scroll;
+      flex-wrap: wrap;
       gap: 10px;
-      z-index: 1;
       height: min-content;
-      scrollbar-width: none;
 
       li {
          width: max-content;
