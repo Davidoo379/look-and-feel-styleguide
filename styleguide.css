@@ -312,7 +312,7 @@
    }
 
    /* MARK: cards */
-   .card {
+   article {
       display: grid;
       background-color: var(--background-light);
       border-radius: 1.5rem;
