@@ -60,22 +60,6 @@
    /* Kleuren */
    :root {
       /* MARK: colors */
-      /* MARK: base colors */
-      --base-xavier-blue: #66b3df;
-      --base-cockatoo: #66c7b4;
-      --base-lustful-wishes: #d6439f;
-      --base-night-rider: #322f2f;
-      --base-bleached-silk: #f2f2f2;
-      --base-eclipse: #3f3b3b;
-
-      /* others */
-      --white: #FFFFFF;
-
-      /* MARK: color-scheme */
-      color-scheme: light dark;
-
-
-      /* MARK: icon colors */
       /* base colors */
       --base-xavier-blue: hsl(202 65% 64%);
       --base-cockatoo: hsl(168 46% 59%);
@@ -84,6 +68,8 @@
       --base-bleached-silk: hsl(0 0% 95%);
       --base-eclipse: hsl(0 3% 24%);
       --white: hsl(0 0% 100%);
+      /* others */
+      --white: #FFFFFF;
 
       /* MARK: color-scheme */
       color-scheme: light dark;
