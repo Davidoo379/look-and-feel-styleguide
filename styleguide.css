@@ -285,7 +285,7 @@
       text-decoration: none;
       cursor: pointer;
       border-radius: 8px;
-      pad: .5em;
+      padding: .5em;
 
       /* Change these for the rainbow colors*/
       --content-color: var(--text-dark);
