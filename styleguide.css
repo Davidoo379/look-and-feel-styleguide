@@ -173,15 +173,18 @@
       /* ? v MIGHT NOT WORK v */
       letter-spacing: 10%;
       color: var(--text-dark);
+      margin-block: .5em;
    }
 
    h2 {
+      margin-block: .4em;
       font-weight: 600;
       font-size: 1.2em;
       color: var(--text-darkest);
    }
 
    h3 {
+      margin-block: .25em;
       font-weight: 600;
       font-size: 1.4em;
       color: var(--text-dark);
@@ -198,10 +201,50 @@
       }
    }
 
+   nav,
+   header,
+   section,
+   form {
+      margin: 1em;
+   }
+
+   table,
+   ul,
+   dl,
+   ol,
+   menu,
+   fieldset,
+   legend,
+   code {
+      margin-block: 1em;
+   }
+
    /* MARK: page background */
    html,
    body {
       background-color: var(--background-medium);
+   }
+
+   /* MARK: color classes */
+   .green {
+      background-color: var(--background-green);
+   }
+
+   .blue {
+      background-color: var(--background-blue);
+   }
+
+   .pink {
+      background-color: var(--background-pink);
+   }
+
+   .dark {
+      background-color: var(--background-darkest);
+      color: var(--text-lightest);
+   }
+
+   .light {
+      background-color: var(--background-light);
    }
 
    /* MARK: block qoute */
@@ -673,5 +716,16 @@
       }
    }
 
+   /* MARK: Layout helpers */
+   .vertical-layout {
+      display: flex;
+      flex-direction: column;
+      gap: .5em;
+   }
+
+   .horizontal-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+   }
 
 }
