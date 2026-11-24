@@ -633,7 +633,6 @@
    input[type="email"],
    input[type="tel"],
    input[type="text"],
-   input[type="search"],
    textarea,
    input[type="password"] {
       background-color: transparent;
@@ -654,6 +653,29 @@
 
       &:user-valid {
          border-color: var(--text-green-light);
+      }
+   }
+
+   .search-field {
+      background-color: var(--background-dark);
+      width: max-content;
+      display: flex;
+      align-items: center;
+      border-radius: 999em;
+      padding: .5em 1em .5em 1em;
+
+      &:focus-within,
+      &:hover {
+         background-color: var(--background-light);
+      }
+
+      input {
+         background-color: transparent;
+         outline: none;
+      }
+
+      button {
+         padding: 0em;
       }
    }
 
