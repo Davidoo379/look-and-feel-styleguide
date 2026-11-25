@@ -806,6 +806,17 @@
       }
    }
 
+   /* MARK: button circle */
+   /* needs button raised eswell */
+   .button-circle {
+      aspect-ratio: 1/1;
+      border-radius: 999em;
+      height: 3em;
+      width: 3em;
+      display: grid;
+      place-content: center;
+   }
+
 
    /* MARK: button flat */
    .button-plain {
