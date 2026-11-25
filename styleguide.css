@@ -712,6 +712,37 @@
       gap: .5em;
    }
 
+   /* MARK: toggle layouts */
+   .toggle-layout {
+      margin-block: 1em;
+
+      label {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      >p {
+         margin-bottom: .5em;
+      }
+   }
+
+   .toggle-layout-compact {
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      grid-template-rows: 1fr 1fr;
+
+      span {
+         grid-column: 1/2;
+         grid-row: 2/-1;
+      }
+
+      input {
+         grid-column: 2/-1;
+         grid-row: 1/-1;
+      }
+   }
+
    /* MARK: Buttons & Anchors */
    button,
    a {
