@@ -702,6 +702,16 @@
       }
    }
 
+   /* MARK: warning */
+   .warning {
+      background-color: var(--background-green-lightest);
+      border-radius: 8px;
+      padding: .25em;
+      display: flex;
+      align-items: center;
+      gap: .5em;
+   }
+
    /* MARK: Buttons & Anchors */
    button,
    a {
