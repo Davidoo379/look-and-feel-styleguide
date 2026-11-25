@@ -995,7 +995,6 @@
       color: var(--text-dark);
 
       &:open {
-         border-radius: 8px 8px 0px 0px;
          background-color: var(--background-darkest);
          color: var(--text-lightest);
       }
@@ -1005,6 +1004,7 @@
 
       &::picker(select) {
          appearance: base-select;
+         background-color: transparent;
          border: none;
          color: var(--text-lightest);
       }
@@ -1022,6 +1022,12 @@
 
       option:last-child {
          border-radius: 0px 0px 8px 8px;
+         margin-bottom: .3em;
+      }
+
+      option:first-child {
+         border-radius: 8px 8px 0px 0px;
+         margin-top: .3em;
       }
 
       option {
