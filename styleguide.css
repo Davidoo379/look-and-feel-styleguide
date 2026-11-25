@@ -948,6 +948,23 @@
       padding: 0;
    }
 
+   dl {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: var(--background-light);
+      border-radius: 1em;
+
+      dt {
+         font-size: 1.2em;
+         font-weight: 600;
+      }
+
+      dd {
+         color: var(--text-medium);
+         padding-bottom: 1em;
+      }
+   }
+
    /* For a list of .image-circle */
    /* MARK: image stack */
    .image-stack {
