@@ -768,10 +768,21 @@
 
    /* MARK: button flat */
    .button-plain {
-      border-radius: 8px;
       --content-color-hover: var(--content-color);
       --background-color: transparent;
       --background-color-hover: transparent;
+   }
+
+   /* MARK: button underline */
+   .button-underline {
+      --content-color-hover: var(--content-color);
+      --background-color: transparent;
+      --background-color-hover: transparent;
+      text-decoration: underline;
+
+      &:hover {
+         text-decoration: none;
+      }
    }
 
    /* MARK: button tab */
