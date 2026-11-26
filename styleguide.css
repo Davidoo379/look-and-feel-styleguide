@@ -865,6 +865,22 @@
 
    }
 
+   .icon-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    svg {
+        min-width: 24px;
+    }
+}
+
 
    /* MARK: Buttons & Anchors */
    button,
