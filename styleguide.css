@@ -649,17 +649,14 @@
          .webinar {
             color: var(--text-lightest);
             background-color: var(--background-pink);
-            margin-left: auto;
          }
 
          .congress {
             background-color: var(--background-dark);
-            margin-left: auto;
          }
 
          .symposium {
             background-color: var(--background-blue);
-            margin-left: auto;
          }
 
          .colleague {
@@ -695,7 +692,7 @@
                transparent calc(var(--i) * 12.5) calc(var(--i) * 13.5),
                var(--background-dark) calc(var(--i) * 13.5));
 
-         @media (min-width: 900px) {
+         @media (min-width: 55em) {
             content: "";
             background-image: none;
          }
