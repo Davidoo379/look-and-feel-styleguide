@@ -763,7 +763,8 @@
          flex-direction: column;
       }
 
-      label {
+      >label,
+      >div {
          translate: 0 -1em;
          opacity: 0;
 
@@ -811,6 +812,21 @@
       input {
          grid-column: 2/-1;
          grid-row: 1/-1;
+      }
+   }
+
+   .horizontal-checkbox-layout {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: .5em;
+      justify-content: start;
+      align-items: center;
+
+      label {
+         display: hidden;
+         text-wrap: wrap;
+         line-clamp: 2;
+         display: block;
       }
    }
 
