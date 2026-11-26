@@ -864,7 +864,8 @@
       }
 
    }
-
+   
+   /*MARK: Icon label*/
    .icon-label {
     display: flex;
     align-items: center;
