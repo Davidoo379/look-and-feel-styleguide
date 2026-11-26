@@ -826,6 +826,46 @@
       }
    }
 
+   
+   /* MARK: checkbox */
+      .hollow-checkbox {
+      width: 1.5rem;
+      height: 1.5rem;
+      appearance: none;
+      border: 0.25rem solid #322F2F;
+      border-radius: 4px;
+      grid-row: 1 / span 2;
+
+      &:checked {
+         background-color: #322F2F;
+      }
+   }
+
+   .checkbox-grid-layout {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 1rem;
+      align-items: start;
+      margin-bottom: 1.5rem;
+      p {
+         grid-column: 2;
+         margin-top: 0.5rem;
+      }
+
+      label {
+         font-weight: 600;
+      }
+
+
+      input[type="checkbox"] {
+         width: 1.5rem;
+         height: 1.5rem;
+         grid-row: 1 / span 2;
+      }
+
+   }
+
+
    /* MARK: Buttons & Anchors */
    button,
    a {
