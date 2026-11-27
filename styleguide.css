@@ -225,6 +225,10 @@
       background-color: var(--background-medium);
    }
 
+   body {
+      margin: auto;
+   }
+
    /* MARK: color classes */
    .green {
       background-color: var(--background-green);
