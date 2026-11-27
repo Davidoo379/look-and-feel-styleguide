@@ -292,6 +292,8 @@
       padding: 1rem;
       gap: 5px;
       column-gap: 10px;
+      max-width: 30em;
+      min-height: 20em;
 
       /* MARK: CARD LINK */
       /* it covers the full card to make it selectible */
@@ -826,9 +828,9 @@
       }
    }
 
-   
+
    /* MARK: checkbox */
-      .hollow-checkbox {
+   .hollow-checkbox {
       width: 1.5rem;
       height: 1.5rem;
       appearance: none;
@@ -847,6 +849,7 @@
       column-gap: 1rem;
       align-items: start;
       margin-bottom: 1.5rem;
+
       p {
          grid-column: 2;
          margin-top: 0.5rem;
@@ -864,23 +867,23 @@
       }
 
    }
-   
+
    /*MARK: Icon label*/
    .icon-label {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
 
-    span {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+      span {
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+      }
 
-    svg {
-        min-width: 24px;
-    }
-}
+      svg {
+         min-width: 24px;
+      }
+   }
 
 
    /* MARK: Buttons & Anchors */
@@ -1357,7 +1360,7 @@
 
    .horizontal-layout {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
    }
 
 }
